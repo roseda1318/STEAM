@@ -14,7 +14,7 @@ This is a static webpage- the goal is to create a site that will hold my thesis 
 - [This was the template that the website was built off of.](https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h)
 - [This is where many of the projects came from.](https://www.instructables.com/)
 
-## Due to this being a living document I am adding notes for next term (when my thesis starts)
+## Notes for Thesis next term
 
 - Consider adding a section for valuable research
 - you need to create a google doc hub for the curriculum to be housed in and add the links to each week
