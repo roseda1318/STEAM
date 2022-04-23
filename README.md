@@ -11,8 +11,8 @@ This is a static webpage- the goal is to create a site that will hold my thesis 
 
 ## To utilize this later
 - For ease of access use google docs to link in the projects- that keeps them living and updates automatically
-- This was the [template] that the website was built off of.(https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h)
-- [This] is where many of the projects came from. (https://www.instructables.com/)
+- [This was the template that the website was built off of.](https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_interior_design&stacked=h)
+- [This is where many of the projects came from.](https://www.instructables.com/)
 
 ## Due to this being a living document I am adding notes for next term (when my thesis starts)
 
