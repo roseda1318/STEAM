@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Intermediate Computer Science</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/fonts.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>NHS<br>STEAM Team</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#curriculum" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Curriculum</a> 
+    <a href="#standards" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Standards</a> 
+    <a href="#contributors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contributors</a> 
+
+ 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Northview High School- STEAM Team</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Intermediate Computer Science</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>STEAM Design</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <!-- Weather Cloud -->
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Weather Cloud- Week ?">
+      <!-- Garden -->
+      <img src="https://content.instructables.com/ORIG/FPF/12XS/KXRJWO23/FPF12XSKXRJWO23.png?auto=webp&frame=1&width=935&height=1024&fit=bounds&md=2f38e84d476190752688926370ee13a1" style="width:100%" onclick="onClick(this)" alt="Hydroponic Garden-- Potential Project-- From Instructables">
+     <!-- Programmamble Bluetooth Speaker -->
+     <img src="https://content.instructables.com/ORIG/FZK/J4DQ/KV58T5ZP/FZKJ4DQKV58T5ZP.png?auto=webp&frame=1&width=1022&fit=bounds&md=8e54695be8fe568057af3d89c613b80a" style="width:100%" onclick="onClick(this)" alt="Programmable Bluetooth epsaker- Potental Project-- Instructables">
+    </div>
+
+    <div class="w3-half">
+    <!-- RGB-LED Clock -->
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="RGB-LED CLock Week?">
+      <!-- Frienship Lamp-- Potential Project -->
+      <img src="https://content.instructables.com/ORIG/FRF/Y8Q1/KYSPCI4D/FRFY8Q1KYSPCI4D.jpg?auto=webp&frame=1&width=840&height=1024&fit=bounds&md=cef92530e5e372491d8f4960c4c61990"    style="width:100%" onclick="onClick(this)" alt="Friendship Lamp- Idea-- From Instructables">
+      <!-- Animated Billy Big Mouth Bass -->
+      <img src="https://content.instructables.com/ORIG/F6M/1G0Y/IVHQY2SR/F6M1G0YIVHQY2SR.jpg?auto=webp&frame=1&width=700&height=1024&fit=bounds&md=5b9fa62f86f139c85e6a7c668cd46f1f" style="width:100%" onclick="onClick(this)" alt="Animated Billy Big Mouth Bass- Remastered- Potental Project- Instructables">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Curriculum -->
+  <div class="w3-container" id="curriculum" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Curriculum.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <p>Why should k-8 have all the fun? The goal of this curriculum is to bring fun flashy tech projects to all 9-12 computer science student. </p>
+
+<p>Ideally, the students completing this curriculum will have complete a computer science course before. For the NHS students, those courses are Intro to CS, AP-Computer Science A, or AP-Computer Science Principles. This curriculum is a half of year and will be a mixture of guided projects and independent studies. </p>
+
+<p>This curriculum has a focus on Science, Technology, Engineering, Art, and Math concepts, they all require a coding and a design element. There will be several access points that allow customization for students at all programming levels. Students will have the option to explore Java, Python, Unity, and JavaScript languages. </p>
+
+  </div>
+ 
+  <!-- Projects -->
+   <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32"> Week 1-9 </li>
+        <li class="w3-padding-16"><a href ="">Week 1</a></li>
+        <li class="w3-padding-16"><a href ="">Week 2</a></li>
+        <li class="w3-padding-16"><a href ="">Week 3</a></li>
+        <li class="w3-padding-16"><a href ="">Week 4</a></li>
+        <li class="w3-padding-16"><a href ="">Week 5</a></li>
+        <li class="w3-padding-16"><a href ="">Week 6</a></li>
+        <li class="w3-padding-16"><a href ="">Week 7</a></li>
+        <li class="w3-padding-16"><a href ="">Week 8</a></li>
+        <li class="w3-padding-16"><a href ="">Week 9</a></li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Week 10-18</li>
+        <li class="w3-padding-16"><a href ="">Week 10</a></li>
+        <li class="w3-padding-16"><a href ="">Week 11</a></li>
+        <li class="w3-padding-16"><a href ="">Week 12</a></li>
+        <li class="w3-padding-16"><a href ="">Week 13</a></li>
+        <li class="w3-padding-16"><a href ="">Week 14</a></li>
+        <li class="w3-padding-16"><a href ="">Week 15</a></li>
+        <li class="w3-padding-16"><a href ="">Week 16</a></li>
+        <li class="w3-padding-16"><a href ="">Week 17</a></li>
+        <li class="w3-padding-16"><a href ="">Week 18</a></li>
+        
+      
+     </ul>
+    </div>
+  </div>
+  
+ 
+  <!-- Standards -->
+  <div class="w3-container" id="standards" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Standards.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">NGSS- Next Generation Science Standards</li>
+        <li class="w3-padding-16"><a href ="">Chemistry</a></li>
+        <li class="w3-padding-16"><a href ="">Biology</a></li>
+        <li class="w3-padding-16"><a href ="">Physics</a></li>
+        <li class="w3-padding-16"><a href ="">Engineering</a></li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Other Points of Reference</li>
+        <li class="w3-padding-16"> <a href ="">Art Standards</a></li>
+        <li class="w3-padding-16"><a href ="">Computer Science Standards</a></li>
+        <li class="w3-padding-16"><a href = "https://www.nasa.gov/audience/foreducators/best/edp.html" >Engineering Design Process NASA</a></li>
+        <li class="w3-padding-16"><a href ="https://www.kentisd.org/educators/career-readiness/framework/k-6/employability-skills/">Employability SKills</a></li>
+      
+     </ul>
+    </div>
+  </div>
+  
+   
+  <!-- Contributors -->
+  <div class="w3-container" id="contributors" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contributors.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+    
+    
+  </div>
+
+  <!-- Contributors -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Danielle Rose </h3>
+          <p class="w3-opacity"></p>
+            <p>Master of Computer Science- Software Engineering (Fall 2022 Thesis Completion)</p>  
+            <p>Master of Education- Curriculum and Instruction- Seconday Math</p>
+          <p>Bachelor of Secondary Education- Math/Biology</p>
+        </div>
+      </div>
+    </div>
+   
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Modified from a <a href="https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3 Schools template.</a></p>
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+<footer>For more information contact Danielle Rose rosedan@mail.gvsu.edu</footer>
+</body>
+</html>
